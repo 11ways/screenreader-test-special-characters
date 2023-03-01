@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Special Characters test page</title>
+    <style type="text/css">
+        table {
+  border-collapse: collapse;
+  margin-bottom: 2.0em;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 1.0em;
+}
+    </style>
+</head>
+<body>
+
+<table id="grammatical" class="data">
+<caption>Grammatical Punctuation Marks</caption>
+<tbody>
+<tr>
+<th scope="col">Symbol</th>
+<th scope="col">The character by itself</th>
+<th scope="col">In Context</th>
+<th scope="col">JAWS 15</th>
+<th scope="col">NVDA</th>
+<th scope="col">VoiceOver</th>
+</tr>
+<tr>
+<th scope="row">tilde</th>
+<td style="text-align: center;">~</td>
+<td><code>https:// www.website.com/ ~user</code></td>
+<td><p>By itself: “tilde”</p>
+<p>In context: yes</p>
+<p>“H T T P S colon slash slash double you double you double dot website dot com slash tilde user”</p></td>
+<td><p>By itself: no</p>
+<p>In context: no </p>
+<p>“H T T P S slash slash double you double you double you dot website dot com slash user”</p>
+<p>(NVDA does NOT mention the tilde or the colon.)</p></td>
+<td><p>By itself: “tilde”</p>
+<p>In context: yes;</p>
+<p>“H T T P S slash slash double you double you double you dot website dot com slash tilde user”</p>
+<p>(VoiceOver reads the tilde, but not the colon)</p></td>
+</tr>
+<tr>
+<th scope="row">backtick mark</th>
+<td style="text-align: center;">`</td>
+<td>&amp;id=`1`</td>
+<td><p>By itself: “grave”, the “a” is pronounced with an “ah” sound, like the “a” in “bravo”</p>
+<p>In context: yes</p>
+<p>“and I D equals grave one grave”</p></td>
+<td><p>By itself: no</p>
+<p>In context: no</p>
+<p>“and I D equals one” (NVDA does NOT pronounce the tick mark)</p></td>
+<td><p>By itself: “accent”</p>
+<p>In context: “and I D equals one”.</p>
+</td>
+</tr>
+<tr>
+<th scope="row">exclamation mark</th>
+<td style="text-align: center;">!</td>
+<td><p>This is exciting!</p>
+<p>This is exciting.</p></td>
+<td><p>By itself: “exclaim”</p>
+<p>In context: no</p>
+<p>JAWS does not change voice inflection at all.</p></td>
+<td><p>By itself: no</p>
+<p>In context: no</p>
+<p>NVDA changes the inflection very slightly (almost imperceptibly) when there is an exclamation mark at the end of a sentence.</p></td>
+<td><p>By itself: “exclaimation mark”</p>
+<p>In context: no</p>
+<p>VoiceOver does not change voice inflection at all when a sentence ends in an exclamation mark.</p></td>
+</tr>
+<tr>
+<th scope="row">inverted exclamation mark, typed as &amp;iexcl;</th>
+<td style="text-align: center;">¡</td>
+<td lang="es"><p>Intersante. ¡Ay caramba!</p>
+<p>Intersante. Ay caramba.</p></td>
+<td><p>By itself: “inverted exclaim”</p>
+<p>In context: no</p>
+<p>In the sentence, JAWS does not change the inflection or the inverted exclamation mark at the beginning.</p></td>
+<td><p>By itself: "inverted exlcamation point"</p>
+<p>In context: no</p>
+<p>NVDA reads the exclamation with a different inflection, and does mention the inverted exclamation mark at the beginning when in reading mode (but not in table mode)</p></td>
+<td><p>By itself: “inverted exclamation mark”</p>
+<p>In context: yes</p>
+<p>VoiceOver does NOT change voice inflection. (It also does NOT change language, even though lang=”es” is added to the td tag.</p></td>
+</tr>
+<tr>
+<th scope="row">at symbol</th>
+<td style="text-align: center;">@</td>
+<td>I have a message for @paul</td>
+<td><p>By itself: “at”</p>
+<p>In context: yes</p>
+<p>“I have a message for at Paul”</p></td>
+<td><p>By itself: “at”</p>
+<p>In context: yes</p>
+<p>“I have a message for at Paul”</p></td>
+<td><p>By itself: “at”</p>
+<p>In context: yes</p>
+<p>“I have a message for at Paul”</p></td>
+</tr>
+<tr>
+<th scope="row">pound/hash/number sign</th>
+<td style="text-align: center;">#</td>
+<td>I live at apartment #40</td>
+<td><p>By itself: “number”</p>
+<p>In context: yes</p>
+<p>I live at apartment number 40</p></td>
+<td><p>By itself: "number"</p>
+<p>In context:</p>
+<p>“I live at apartment number 40”</p></td>
+<td><p>By itself: “number”</p>
+<p>In context: yes</p>
+<p>I live at apartment number 40”</p></td>
+</tr>
+<tr>
+<th scope="row">caret</th>
+<td style="text-align: center;">^</td>
+<td>This is ^not the worst I’ve seen</td>
+<td><p>By itself: “caret”</p>
+<p>In context: yes</p>
+<p>“This is caret not the worst I’ve seen”</p></td>
+<td><p>By itself: "caret"</p>
+<p>In context: yes</p>
+<p>“This is caret not the worst I’ve seen</p>
+</td>
+<td><p>By itself: “caret”</p>
+<p>In context: yes</p>
+<p>“This is caret not the worst I’ve seen”</p></td>
+</tr>
+<tr>
+<th scope="row">ampersand, typed as &amp;amp;</th>
+<td style="text-align: center;">&amp;</td>
+<td><p>M&amp;Ms</p>
+<p>BB&amp;T</p>
+<p>black &amp; white</p></td>
+<td><p>By itself: “and”</p>
+<div>
+<p>In context: yes</p>
+<ul>
+<li>“M and M S,”</li>
+<li>“B B and T,”</li>
+<li>“black and white”</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: “and”</p>
+<div>
+<p>In context: yes</p>
+<ul>
+<li>“M and M S,”</li>
+<li>“B B and T,”</li>
+<li>“black and white”</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: “and”</p>
+<div>
+<p>In context: yes</p>
+<ul>
+<li>“M and M S,”</li>
+<li>“B B and T,”</li>
+<li>“black and white”</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row">ampersand</th>
+<td style="text-align: center;">&amp;</td>
+<td><p>M&amp;Ms</p>
+<p>BB&amp;T</p>
+<p>black &amp; white</p></td>
+<td><p>By itself: “and”</p>
+<div>
+<p>In context: yes</p>
+<ul>
+<li>“M and M S,”</li>
+<li>“B B and T,”</li>
+<li>“black and white”</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: “and”</p>
+<div>
+<p>In context: yes</p>
+<ul>
+<li>“M and M S,”</li>
+<li>“B B and T,”</li>
+<li>“black and white”</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: “and”</p>
+<div>
+<p>In context: yes</p>
+<ul>
+<li>“M and M S,”</li>
+<li>“B B and T,”</li>
+<li>“black and white”</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row">asterisk</th>
+<td style="text-align: center;">*</td>
+<td><p>Fields marked with * are required.</p>
+<p>Name*</p></td>
+<td><p>By itself: “star”</p>
+<div>
+<p>In context: yes</p>
+<ul>
+<li>“Fields marked with star are required”</li>
+<li>“Name star”</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: "star"</p>
+<div>
+<p>In context: yes</p>
+<ul>
+<li>“Fields marked with star are required”</li>
+<li>“Name star”</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: “star”</p>
+<div>
+<p>In context:yes</p>
+<ul>
+<li>“Fields marked with star are required”</li>
+<li>“Name star”</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row">left parenthesis</th>
+<td style="text-align: center;">(</td>
+<td>I am (understandably) excited.</td>
+<td><p>By itself: “left paren”</p>
+<p>In context: yes</p>
+<p>“I am left paren understandably right paren excited”</p></td>
+<td>By itself: no
+<p>In context: no</p>
+<p>NVDA does not say anything, just a short pause.</p></td>
+<td><p>By itself: “left parenthesis”</p>
+<p>In context: no</p>
+<p>VoiceOver pauses briefly for the opening and closing parentheses, but does not say anything.</p></td>
+</tr>
+<tr>
+<th scope="row">right parenthesis</th>
+<td style="text-align: center;">)</td>
+<td>I am (understandably) excited.</td>
+<td><p>By itself: “right paren”</p>
+<p>In context: yes</p>
+<p>“I am left paren understandably right paren excited”</p></td>
+<td>By itself: no
+<p>In context: no</p>
+<p>NVDA does not say anything, just a short pause.</p></td>
+<td><p>By itself: “right parenthesis”</p>
+<p>In context: no</p>
+<p>VoiceOver pauses briefly for the opening and closing parentheses, but does not say anything.</p></td>
+</tr>
+<tr>
+<th scope="row">dash</th>
+<td style="text-align: center;">–</td>
+<td><p>blue-green.</p>
+<p>This is — not unexpectedly — a parenthetical clause.</p></td>
+<td><p>By itself: “m dash”</p>
+<div>
+<p>In context: yes</p>
+<p>“blue dash green”</p>
+<p>“This is m dash not unexpectedly m dash a parenthetical clause.”</p>
+</div>
+</td>
+<td><p>By itself: no</p>
+<p>In context: NVDA does not say anything, nor does it pause; it reads straight through</p></td>
+<td><p>By itself: “m dash”</p>
+<p>In context: VoiceOver does not read the dash, instead pauses briefly.</p></td>
+</tr>
+<tr>
+<th scope="row">m dash, typed as &amp;mdash;</th>
+<td style="text-align: center;">—</td>
+<td>This is also—not unexpectedly—a parenthetical clause.</td>
+<td><p>By itself: “m dash”</p>
+<p>In context: “This is also m dash not unexpectedly m dash a parenthetical clause.”</p></td>
+<td><p>By itself: no</p>
+<p>In context: NVDA does not say anything, nor does it pause; it reads straight through</p></td>
+<td><p>By itself: “dash”</p>
+<p>In context: VoiceOver pauses briefly for each of the dashes, but does not say anything.</p></td>
+</tr>
+<tr>
+<th scope="row">n dash, typed as &amp;ndash;</th>
+<td style="text-align: center;">–</td>
+<td><p>This is another – not unexpectedly – parenthetical clause.</p>
+<p>This is another–not unexpectedly–parenthetical clause.</p></td>
+<td><p>By itself: “n dash”</p>
+<p>In context: “This is another n dash not unexpectedly n dash parenthetical clause.”</p></td>
+<td><p>By itself: no</p>
+<p>In context: NVDA does not say anything, nor does it pause; it reads straight through</p></td>
+<td><p>By itself: “n dash”</p>
+<p>In context: VoiceOver pauses briefly for each of the dashes, without saying anything, but ONLY IF there are spaces between the words and the dashes. Without spaces, VoiceOver does not pause at all.</p></td>
+</tr>
+<tr>
+<th scope="row">underscore</th>
+<td style="text-align: center;">_</td>
+<td>my_file_name.jpg</td>
+<td><p>By itself: “underline”</p>
+<p>In context: “my underline file underline name dot J P G”</p></td>
+<td><p>By itself: no</p>
+<p>In context:</p>
+<p>“my file name dot J P G” (NVDA does not say “underline”)</p></td>
+<td><p>By itself: “underscore”</p>
+<p>In context: “my underscore file underscore name dot jaypeg”</p></td>
+</tr>
+<tr>
+<th scope="row">comma</th>
+<td style="text-align: center;">,</td>
+<td>The house is green, red, and orange.</td>
+<td><p>By itself: comma</p>
+<p>In context: JAWS pauses briefly, but does not say “comma”</p></td>
+<td><p>By itself: no</p>
+<p>In context: NVDA pauses briefly, but does not say “comma”</p></td>
+<td><p>By itself: “comma”</p>
+<p>In context: VoiceOver pauses briefly, but does not say “comma”</p></td>
+</tr>
+<tr>
+<th scope="row">period</th>
+<td style="text-align: center;">.</td>
+<td>I like cheese.</td>
+<td><p>By itself: “period”</p>
+<p>In context: JAWS pauses, but does not say “period”</p></td>
+<td><p>By itself: “dot”</p>
+<p>In context: NVDA pauses, but does not say “period”</p></td>
+<td><p>By itself: “period”</p>
+<p>In context: VoiceOver pauses, but does not say “period”</p></td>
+</tr>
+<tr>
+<th scope="row">three periods (pseudo ellipses)</th>
+<td style="text-align: center;">…</td>
+<td>This sentence trails off… And here is another sentence.</td>
+<td><p>By itself: “ellipses”</p>
+<p>In context: “This sentence trails off and here is another sentence”. JAWS pauses briefly at the spot of the ellipses.</p></td>
+<td><p>By itself: no</p>
+<p>In context: NVDA pauses briefly, but does not read the periods</p></td>
+<td><p>By itself: "ellipses"</p>
+<p>In context: VoiceOver does not say “ellipses,” but it does pause longer than normal.</p></td>
+</tr>
+<tr>
+<th scope="row">ellipses typed as &amp;#8230;</th>
+<td style="text-align: center;">…</td>
+<td>This sentence trails off… And here is another sentence.</td>
+<td><p>By itself: “ellipses”</p>
+<p>In context: JAWS does not say “ellipses,” but it does pause longer than normal.</p></td>
+<td><p>By itself: no</p>
+<p>In context: NVDA pauses briefly, but does not read the ellipses</p></td>
+<td><p>By itself: “ellipses”</p>
+<p>In context: VoiceOver does not say “ellipses,” but it does pause longer than normal.</p></td>
+</tr>
+<tr>
+<th scope="row">forward slash</th>
+<td style="text-align: center;">/</td>
+<td><p>home/products/widgets</p>
+<p>Give him/her a prize.</p>
+<p>https://www.deque.com</p></td>
+<td><p>By itself: “slash”</p>
+<div>
+<p>In context:</p>
+<ul>
+<li>“home slash products slash widgets”</li>
+<li>“Give him slash her a prize”</li>
+<li>H T T P S slash slash double you double you double you dot deque dot com”</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: “slash”</p>
+<div>
+<p>In context: </p>
+<ul>
+<li>“home slash products slash widgets”</li>
+<li>“Give him slash her a prize”</li>
+<li>“H T T P S colon slash slash double you double you double you dot deque dot com”</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: “slash”</p>
+<div>
+<p>In context: </p>
+<ul>
+<li>“home slash products slash widgets”</li>
+<li>“Give him slash her a prize”</li>
+<li>H T T P S colon slash slash double you double you double you dot deque dot com”</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row">backslash</th>
+<td style="text-align: center;">\</td>
+<td>c:\folder\file.docx</td>
+<td><p>By itself: “backslash”</p>
+<p>In context: “c colon backslash folder backslash file dot docx”</p></td>
+<td><p>By itself: no</p>
+<p>In context: no. NVDA reads the words without a pause in between.</p></td>
+<td><p>By itself: “backslash”</p>
+<p>In context: “c backslash folder backslash file docx”</p></td>
+</tr>
+<tr>
+<th scope="row">vertical bar</th>
+<td style="text-align: center;">|</td>
+<td>Products | Our web site</td>
+<td><p>By itself: “vertical bar”</p>
+<p>In context: “Products vertical bar our web site”</p></td>
+<td><p>By itself: no</p>
+<p>In context: no. NVDA reads the words without a pause.</p></td>
+<td><p>By itself: "vertical line"</p>
+<p>In context: “Products vertical line our web site”</p></td>
+</tr>
+<tr>
+<th scope="row">question mark</th>
+<td style="text-align: center;">?</td>
+<td><p>What do you mean?</p>
+<p>Are you crazy??</p>
+<p>Are you still crazy?!?</p></td>
+<td><p>By itself: “question?”</p>
+<div>
+<p>In context: </p>
+<ul>
+<li>JAWS changes the voice inflection of the last word in a sentence if the sentence ends in a question mark, to make it sound like someone asking a question.</li>
+<li>Two question marks, or question marks mixed with exclamation marks are read the same as a single question mark.</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: no</p>
+<div>
+<p>In context: </p>
+<ul>
+<li>NVDA changes the voice inflection of the last word in a sentence if the sentence ends in a question mark, to make it sound like someone is asking a question</li>
+<li>Two question marks, or question marks mixed with exclamation marks are read the same as a single question mark.</li>
+</ul>
+</div>
+</td>
+<td><p>By itself: “question mark”</p>
+<div>
+<p>In context: </p>
+<ul>
+<li>VoiceOver changes the voice inflection of the last word in a sentence if the sentence ends in a question mark, to make it sound like someone asking a question.</li>
+<li>Two question marks, or question marks mixed with exclamation marks are read the same as a single question mark.</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row">inverted question mark, typed as &amp;iquest;</th>
+<td style="text-align: center;">¿</td>
+<td lang="es">No estoy seguro. ¿Quién soy?<p></p>
+<p>No estoy seguro. Quién soy.</p></td>
+<td><p>By itself: “inverted question”</p>
+<p>In context: JAWS does not change the inflection for the question, and does not mention the inverted question mark at the beginning.</p></td>
+<td><p>By itself: "inverted question mark"</p>
+<p>In context: NVDA does mention the inverted question mark at the beginning of the sentence in reading mode (but not in table mode).</p></td>
+<td><p>By itself: “inverted question mark”</p>
+<p>In context: VoiceOver does NOT change inflection (and it ignores the lang=”es” set on the td tag)</p></td>
+</tr>
+<tr>
+<th scope="row">semi-colon</th>
+<td style="text-align: center;">;</td>
+<td>The sentence paused; but not for long.</td>
+<td><p>By itself: “semi-colon”</p>
+<p>In context: “The sentence paused semi-colon but not for long”</p></td>
+<td><p>By itself: no</p>
+<p>In context: NVDA pauses briefly, but does NOT read the semi-colon</p></td>
+<td><p>By itself: “semi-colon”</p>
+<p>In context: VoiceOver pauses briefly, but does NOT say “semi-colon”</p></td>
+</tr>
+<tr>
+<th scope="row">colon</th>
+<td style="text-align: center;">:</td>
+<td>Gaseous: having the properties of a gas.<p></p>
+<p>https://www.deque.com</p></td>
+<td><p>By itself: “colon”</p>
+<p>In context:</p>
+<ul>
+<li>“Gaseous colon having the properties of a gas”</li>
+<li>“H T T P colon slash slash deque dot com”</li>
+</ul>
+</td>
+<td><p>By itself: no</p>
+<p>In context: NVDA pauses briefly, but does NOT read the colon</p></td>
+<td><p>By itself: “colon”</p>
+<p>In context: “H T T P S colon slash slash double you double you double dot deque dot com”</p></td>
+</tr>
+<tr>
+<th scope="row">double quotation mark</th>
+<td style="text-align: center;">“</td>
+<td>I feel “fine,” she said, sarcastically.</td>
+<td><p>By itself: “left quote”</p>
+<p>In context: “I feel left quote fine right quote she said sarcastically”</p></td>
+<td><p>By itself: no</p>
+<p>In context: NVDA does not read the character.</p></td>
+<td><p>By itself: “left double quotation mark”</p>
+<p>In context: VoiceOver pauses briefly but does NOT read the character.</p></td>
+</tr>
+<tr>
+<th scope="row">double quotation mark, typed as &amp;quot;</th>
+<td style="text-align: center;">“</td>
+<td>I feel “fine,” she said, sarcastically.</td>
+<td><p>By itself: “left quote”</p>
+<p>In context: “I feel left quote fine right quote she said sarcastically”</p></td>
+<td><p>By itself: no</p>
+<p>In context: NVDA does not read out the character.</p></td>
+<td><p>By itself: “left double quotation mark”</p>
+<p>In context: VoiceOver pauses briefly but does NOT say “quote”.</p></td>
+</tr>
+<tr>
+<th scope="row">right double quotation mark</th>
+<td style="text-align: center;">”</td>
+<td>I feel “fine,” she said, sarcastically.</td>
+<td><p>By itself: “right quote”</p>
+<p>In context: “I feel left quote fine right quote she said sarcastically”</p></td>
+<td>By itself: no</p>
+<p>In context: “I feel fine, she said, sarcastically”</p></td>
+<td><p>By itself: “right double quotation mark”</p>
+<p>In context: VoiceOver pauses briefly but does NOT read the character.</p></td>
+</tr>
+<tr>
+<th scope="row">left double quotation mark</th>
+<td style="text-align: center;">“</td>
+<td>I feel “fine,” she said, sarcastically.</td>
+<td><p>By itself: “left quote”</p>
+<p>In context: “I feel left quote fine right quote she said sarcastically”</p></td>
+<td><p>By itself: no</p>
+<p>In context: “I feel fine, she said, sarcastically”</p></td>
+<td><p>By itself: “left double quotation mark”</p>
+<p>In context: VoiceOver pauses briefly but does NOT read out the character.</p></td>
+</tr>
+<tr>
+<th scope="row">left double angle bracket, typed as &amp;laquot;</th>
+<td style="text-align: center;">«</td>
+<td>This is a «word» surrounded by angle brackets.</td>
+<td><p>By itself: “left double angle bracket”</p>
+<p>In context: “This is a left double angle bracket word right double angle bracket surrounded by angle brackets”</p></td>
+<td><p>By itself: "double left pointing angle bracket"</p>
+<p>In context: “This is a double left pointing angle bracket word double right pointing angle bracket surrounded by angle brackets”</p></td>
+<td><p>By itself: “left pointing double arrow”</p>
+<p>In context: VoiceOver pauses briefly, but does not pronounce the angle bracket.</p></td>
+</tr>
+<tr>
+<th scope="row">right double angle bracket, typed as &amp;raquot;</th>
+<td style="text-align: center;">»</td>
+<td>Home » Products</td>
+<td><p>By itself: "right double angle bracket"</p>
+<p>In context: "Home double angle bracket products"</p></td>
+<td>By itself: "double right pointing angle bracket"
+<p>In context: "Home double right pointing angle bracket products"</p></td>
+<td>By itself: "right pointing double arrow"</p>
+<p>In context: VoiceOver does not pronounce the angle bracket.</p></td>
+</tr>
+<tr>
+<th scope="row">(written as &amp;#8249;)</th>
+<td style="text-align: center;">‹</td>
+<td>This is a ‹word› surrounded by angle brackets.</td>
+<td>By itself: "single left pointing angle quotation mark"
+<p>In context: "This is a single left pointing angle quotation mark word single right pointing angle quotation mark surrounded by angle brackets"</p></td>
+<td><p>By itself: no</p>
+<p>In context: "This is a word surrounded by angle brackets"</p></td>
+<td><p>By itself: "angle quotation mark"</p>
+<p>In context: VoiceOver pauses briefly, but does not pronounce the angle bracket.</p></td>
+</tr>
+<tr>
+<th scope="row">(written as &amp;#8250;)</th>
+<td style="text-align: center;">›</td>
+<td>Home › Products</td>
+<td>By itself: single right pointing angle quotation mark
+<p>In context: "Home single right pointing angle quotation mark products"</p></td>
+<td><p>By itself: no</p>
+<p>In context: "Home products"</p></td>
+<td><p>By itself: "angle quotation mark"</p>
+<p>In context: VoiceOver pauses briefly, but does not pronounce the angle bracket.</p></td>
+</tr>
+<tr>
+<th scope="row">single quotation mark, or apostrophe</th>
+<td style="text-align: center;">‘</td>
+<td><p>Don’t rock the boat.</p>
+<p>This is Mary’s.</p>
+<p>This is a ‘quotation’ of sorts.</p></td>
+<td><p>By itself: "apostrophe"</p>
+<p>In context:</p>
+<ul>
+<li>"Don’t rock the boat"</li>
+<li>"This is Mary’s"</li>
+<li>"This is a apostrophe quotation apostrophe of sorts"</li>
+</ul>
+</td>
+<td><p>By itself: no</p>
+<p>In context: </p>
+<ul>
+<li>"Don’t rock the boat"</li>
+<li>"This is Mary’s"</li>
+<li>"This is a quotation of sorts" (NVDA does not pause or read the character here)</li>
+</ul>
+</td>
+<td><p>By itself: "apostrophe"</p>
+<p>In context:</p>
+<ul>
+<li>"Don’t rock the boat"</li>
+<li>"This is Mary’s"</li>
+<li>"This is a quotation of sorts" (VoiceOver pauses briefly, but does NOT say "apostrophe" here)</li>
+</ul>
+<p>&nbsp;</p></td>
+</tr>
+<tr>
+<th scope="row">right single quotation mark, or right apostrophe, typed as &amp;rsquo;</th>
+<td style="text-align: center;">’</td>
+<td>Don’t rock the boat.<p></p>
+<p>This is Mary’s</p>
+<p>This is a ‘quotation’ of sorts.</p></td>
+<td><p>By itself: "apostrophe"</p>
+<p>In context: 
+<ul>
+<li>"Don’t rock the boat"</li>
+<li>"This is Mary’s"</li>
+<li>"This is a apostrophe quotation apostrophe of sorts"</li>
+</ul>
+</td>
+<td><p>By itself: no</p>
+<p>In context: </p>
+<ul>
+<li>"Don’t rock the boat"</li>
+<li>"This is Mary’s"</li>
+<li>"This is a quotation of sorts" (NVDA does not read the character)</li>
+</ul>
+</td>
+<td><p>By itself: "right single quotation mark"</p>
+<p>In context:</p>
+<ul>
+<li>"Don’t rock the boat"</li>
+<li>"This is Mary’s"</li>
+<li>"This is a quotation of sorts" (VoiceOver pauses briefly, but does NOT say read the character)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">left single quotation mark, or left apostrophe, typed as &amp;lsquo;</th>
+<td style="text-align: center;">‘</td>
+<td>This is a ‘quotation’ of sorts.</td>
+<td><p>By itself: "apostrophe"</p>
+<p>In context: "This is a apostrophe quotation apostrophe of sorts"</p></td>
+<td><p>By itself: no</p>
+<p>In context: "This is a quotation of sorts" (NVDA does not read out the character)</p></td>
+<td>By itself: "left single quotation mark"</p>
+<p>In context: "This is a quotation of sorts"</p>
+<p>(VoiceOver pauses briefly, but does NOT read out the character)</p></td>
+</tr>
+<tr>
+<th scope="row">left brace</th>
+<td style="text-align: center;">{</td>
+<td>You should {brace} yourself.</td>
+<td><p>By itself: "left brace"</p>
+<p>In context: "You should left brace brace right brace yourself"</p></td>
+<td><p>By itself: no</p>
+<p>In context: "You should brace yourself" (NVDA does not read out the character)</p></td>
+<td><p>“By itself: "left curly bracket"</p>
+<p>In context: "You should left curly bracket brace right curly bracket yourself"</p></td>
+</tr>
+<tr>
+<th scope="row">right brace</th>
+<td style="text-align: center;">}</td>
+<td>You should {brace} yourself.</td>
+<td><p>By itself: "right brace"</p>
+<p>In context: "You should left brace brace right brace yourself"</p></td>
+<td><p>By itself: no</p>
+<p>In context: "You should brace yourself" (NVDA does not read out the character)</p></td>
+<td>By itself: "right curly bracket"</p>
+<p>In context: "You should left curly bracket brace right curly bracket yourself"</p></td>
+</tr>
+<tr>
+<th scope="row">left bracket</th>
+<td style="text-align: center;">[</td>
+<td>You should [bracket] your words.</td>
+<td><p>By itself: "left bracket"</p>
+<p>In context: "You should left bracket bracket right bracket your words"</p></td>
+<td><p>By itself: no</p>
+<p>In context: "You should left bracket bracket right bracket your words"</p></td>
+<td><p>By itself: "left bracket"</p>
+<p>In context: "You should bracket your words" (VoiceOver pauses briefly, but does NOT read out the character)</p></td>
+</tr>
+<tr>
+<th scope="row">right bracket</th>
+<td style="text-align: center;">]</td>
+<td>You should [bracket] your words.</td>
+<td><p>By itself: "right bracket"</p>
+<p>In context: "You should left bracket bracket right bracket your words"</p></td>
+<td><p>By itself: no</p>
+<p>In context: "You should left bracket bracket right bracket your words"</p></td>
+<td><p>By itself: "right bracket"</p>
+<p>In context: "You should bracket your words" (VoiceOver pauses briefly, but does NOT read out the character)</p></td>
+</tr>
+</tbody>
+</table>
+
+<table id="typo" class="data">
+<caption>Typographical Symbols</caption>
+<tbody>
+<tr>
+<th scope="col">Symbol</th>
+<th scope="col">The character by itself</th>
+<th scope="col">In Context</th>
+<th scope="col">JAWS</th>
+<th scope="col">NVDA</th>
+<th scope="col">VoiceOver</th>
+</tr>
+<tr>
+<th scope="row">copyright, written as &amp;copy;</th>
+<td style="text-align: center;">©</td>
+<td>This content © Deque.</td>
+<td><p>By itself: "copyright"</p>
+<p>In context: "This content copyright Deque"</p></td>
+<td><p>By itself: "copyright"</p>
+<p>In context: "This content copyright Deque"</p></td>
+<td><p>By itself: "copyright sign"</p>
+<p>In context: "This content copyright sign Deque"</p></td>
+</tr>
+<tr>
+<th scope="row">registered trademark symbol, written as &amp;reg;</th>
+<td style="text-align: center;">®</td>
+<td>Spam®</td>
+<td><p>By itself: "registered"</p>
+<p>In context: "Spam registered"</p></td>
+<td><p>By itself: "registered"</p>
+<p>In context: "Spam registered"</p></td>
+<td><p>By itself: "registered sign"</p>
+<p>In context: "Spam registered sign"</p></td>
+</tr>
+<tr>
+<th scope="row">trademark symbol, TM, written as &amp;trade;</th>
+<td style="text-align: center;">™</td>
+<td>Fits like a glove™</td>
+<td><p>By itself: "trademark"</p>
+<p>In context: "Fits like a glove trademark"</p></td>
+<td><p>By itself: "trademark"</p>
+<p>In context: "Fits like a glove trademark"</p></td>
+<td><p>By itself: "trademark"</p>
+<p>In context: "Fits like a glove trademark". The words "glove" and "trademark" follow each other up rather quickly and the tone/pitch changes when VoiceOver reads trademark.</p></td>
+</tr>
+<tr>
+<th scope="row">section, written as &amp;sect;</th>
+<td style="text-align: center;">§</td>
+<td>Be sure to read §24.1.</td>
+<td><p>By itself: "section"</p>
+<p>In context: "Be sure to read section twenty four point one"</p></td>
+<td><p>By itself: no</p>
+<p>In context: "Be sure to read twenty four point one" (NVDA does NOT read the section symbol)</p></td>
+<td><p>By itself: "section symbol"</p>
+<p>In context: "Be sure to read section symbol two four point one"</p></td>
+</tr>
+<tr>
+<th scope="row">paragraph symbol, written as &amp;para;</th>
+<td style="text-align: center;">¶</td>
+<td>Have you seen ¶3 on page 3?</td>
+<td><p>By itself: "paragraph"</p>
+<p>In context: "Have you seen paragraph three on page three?"</p></td>
+<td>By itself: no
+<p>In context: no, "Have you seen three on page three?"</p></td>
+<td><p>By itself: I think VoiceOver says "pillcraw" but it is really hard to understand.</p>
+In context: "Have you seen pillcraw three on page three?"</p></td>
+</tr>
+<tr>
+<th scope="row">small bullet, written as &amp;middot;</th>
+<td style="text-align: center;">·</td>
+<td>· A phrase · and another phrase</td>
+<td><p>By itself: "dot"</p>
+<p>In context: "dot a phrase dot and another phrase"</p></td>
+<td><p>By itself: no</p>
+<p>In context: "A phrase and another phrase" (NVDA does NOT read the small bullet)</p></td>
+<td><p>By itself: "middle dot"</p>
+<p>In context: the first dot is announced in a unintelligble way. The second dot does not get announced, VoiceOver pauses there briefly</p></td>
+</tr>
+<tr>
+<th scope="row">medium bullet, written as &amp;#8226;</th>
+<td style="text-align: center;">•</td>
+<td>• A phrase • and another phrase<p></p>
+<p>&nbsp;</p></td>
+<td><p>By itself: "bullet"</p>
+<p>In context: "bullet a phrase bullet and another phrase"</p></td>
+<td><p>By itself: "bullet"</p>
+<p>In context: "Bullet a 2phrase bullet and another phrase"</p></td>
+<td><p>By itself: "bullet"</p>
+<p>In context: "Bullet a phrase bullet and another phrase"</p></td>
+</tr>
+<tr>
+<th scope="row">dagger, written as &amp;dagger;</th>
+<td style="text-align: center;">†</td>
+<td>Read the footnote†</td>
+<td><p>By itself: "single dagger"</p>
+<p>In context: "Read the footnote single dagger"</p></td>
+<td><p>By itself: "dagger"</p>
+<p>In context: "Read the footnote dagger"</p></td>
+<td><p>By itself: "dagger"</p>
+<p>In context: "Read the footnote dagger"</p></td>
+</tr>
+<tr>
+<th scope="row">double dagger, written as &amp;Dagger;</th>
+<td style="text-align: center;">‡</td>
+<td>Read the other footnote‡</td>
+<td><p>By itself: "double dagger"</p>
+<p>In context: "Read the other footnote double dagger"</p></td>
+<td><p>By itself: "double dagger"</p>
+<p>In context: "Read the other footnote double dagger"</p></td>
+<td><p>By itself: "double dagger"</p>
+<p>In context: "Read the other footnote double dagger"</p></td>
+</tr>
+<tr>
+<th scope="row">right arrow, written as &amp;rarr;</th>
+<td style="text-align: center;">→</td>
+<td>Press the → key</td>
+<td><p>By itself: "rightwards arrow"</p>
+<p>In context: "Press the rightwards arrow key"</p>
+</td>
+<td><p>By itself: "right arrow"</p>
+<p>In context: "Press the right arrow key"</p></td>
+<td><p>By itself: "right arrow"</p>
+<p>In context: "Press the right arrow key"</p></td>
+</tr>
+<tr>
+<th scope="row">left arrow, written as &amp;lrarr;</th>
+<td style="text-align: center;">←</td>
+<td>Press the ← key</td>
+<td><p>By itself: "leftwards arrow"</p>
+<p>In context: "Press the leftwards arrow key"</p></td>
+<td><p>By itself: "left arrow"</p>
+<p>In context: "Press the left arrow key"</p></td>
+<td><p>By itself: "left arrow"</p>
+<p>In context: "Press the left arrow key"</p></td>
+</tr>
+<tr>
+<th scope="row">up arrow, written as &amp;uarr;</th>
+<td style="text-align: center;">↑</td>
+<td>Press the ↑ key</td>
+<td><p>By itself: "upwards arrow"</p>
+<p>In context: "Press the upwards arrow key"</p></td>
+<td><p>By itself: "up arrow"</p>
+<p>In context: "Press the up arrow key"</p></td>
+<td><p>By itself: "up arrow"</p>
+<p>In context: "Press the up arrow key"</p></td>
+</tr>
+<tr>
+<th scope="row">down arrow, written as &amp;darr;</th>
+<td style="text-align: center;">↓</td>
+<td>Press the ↓ key</td>
+<td><p>By itself: "downwards arrow"</p>
+<p>In context: "Press the downwards arrow key"</p></td>
+<td><p>By itself: "down arrow"</p>
+<p>In context: "Press the down arrow key"</p></td>
+<td><p>By itself: "down arrow"</p>
+<p>In context: "Press the down arrow key"</p></td>
+</tr>
+<tr>
+<th scope="row">horizontal arrow, written as &amp;harr;</th>
+<td style="text-align: center;">↔</td>
+<td>Move ↔ horizontally.</td>
+<td><p>By itself: "left right arrow"</p>
+<p>In context: "Move left right arrow horizontally"</p>
+</td>
+<td><p>By itself: "left right arrow"</p>
+<p>In context: "Move left right arrow horizontally"</p></td>
+<td><p>By itself: "left right arrow"</p>
+<p>In context: "Move left right arrow horizontally"</p></td>
+</tr>
+<tr>
+<th scope="row">double right arrow, written as &amp;rArr;</th>
+<td style="text-align: center;">⇒</td>
+<td>Look over there ⇒ at that shark.</td>
+<td><p>By itself: "rightwards double arrow"</p>
+<p>In context: "Look over there rightwards double arrow at that shark"</p></td>
+<td><p>By itself: "double right arrow"</p>
+<p>In context: "Look over there double right arrow at that shark"</p></td>
+<td><p>By itself: "rightwards double arrow"</p>
+<p>In context: "Look over there rightwards double arrow at that shark"</p></td>
+</tr>
+<tr>
+<th scope="row">double left arrow, written as &amp;lAarr;</th>
+<td style="text-align: center;">⇚</td>
+<td>Look over there ⇚ at that dolphin.</td>
+<td><p>By itself: "leftwards triple arrow"</p>
+<p>In context: "Look over there leftwards triple arrow at that dolphin"</p></td>
+<td><p>By itself: "leftwards double arrow"</p>
+<p>In context: "Look over there leftwards double arrow at that dolphin"</p></td>
+<td><p>By itself: "leftwards double arrow"</p>
+<p>In context: "Look over there leftwards double arrow at that dolphin"</p></td>
+</tr>
+<tr>
+<th scope="row">double up arrow, written as &amp;uArr;</th>
+<td style="text-align: center;">⇑</td>
+<td>Look up there ⇑ at that platypus.</td>
+<td><p>By itself: "upwards double arrow"</p>
+<p>In context: "Look up there upwards double arrow at that platypus"</p>
+</td>
+<td><p>By itself: "upwards double arrow"</p>
+<p>In context: "Look up there upwards double arrow at that platypus"</p></td>
+<td><p>By itself: "upwards double arrow"</p>
+<p>In context: "Look over there upwards double arrow at that platypus"</p></td>
+</tr>
+<tr>
+<th scope="row">double down arrow, written as &amp;dArr;</th>
+<td style="text-align: center;">⇓</td>
+<td>Look down there ⇓ at that echidna.</td>
+<td><p>By itself: "downwards double arrow"</p>
+<p>In context: "Look down there downwards double arrow at that echidna"</p></td>
+<td><p>By itself: "downwards double arrow"</p>
+<p>In context: "Look down there downwards double arrow at that echidna"</p></td>
+<td><p>By itself: "downwards double arrow"</p>
+<p>In context: "Look over there downwards double arrow at that echidna"</p></td>
+</tr>
+<tr>
+<th scope="row">double horizontal arrow, written as &amp;hArr;</th>
+<td style="text-align: center;">⇔</td>
+<td>I’m ⇔ confused.</td>
+<td><p>By itself: "left right double arrow"</p>
+<p>In context: "I’m left right double arrow confused"</p>
+</td>
+<td><p>By itself: "left right double arrow"</p>
+<p>In context: "I’m left right double arrow confused"</p></td>
+<td><p>By itself: "left right double arrow"</p>
+<p>In context: Voiceover does NOT read the double arrow, and does NOT pause.</p></td>
+</tr>
+<tr>
+<th scope="row">playing cards: spades, written as &amp;spades;</th>
+<td style="text-align: center;">♠</td>
+<td>Let’s call a ♠ a ♠.</td>
+<td><p>By itself: "black spades suit"</p>
+<p>In context: "Let’s call a black spades suit a black spades suit"</p></td>
+<td><p>By itself: "spades suit"</p>
+<p>In context: "Let’s call a spades suit a spade suit"</p></td>
+<td><p>By itself: "black spades cards suit"</p>
+<p>In context: "Let’s call a black spades cards suit a black spades cards suit"</p></td>
+</tr>
+<tr>
+<th scope="row">playing cards: clubs, written as &amp;clubs;</th>
+<td style="text-align: center;">♣</td>
+<td>I found a ♣. Today is my lucky day.</td>
+<td><p>By itself: "black club suit"</p>
+<p>In context: "I found a black club suit. Today is my lucky day"</p></td>
+<td><p>By itself: "club suit"</p>
+<p>In context: "I found a club suit. Today is my lucky day"</p></td>
+<td><p>By itself: "black clubs cards suit"</p>
+<p>In context: "I found a black clubs cards suit. Today is my lucky day"</p></td>
+</tr>
+<tr>
+<th scope="row">playing cards: hearts, written as &amp;hearts;</th>
+<td style="text-align: center;">♥</td>
+<td>I ♥ you.</td>
+<td><p>By itself: "black heart suit"</p>
+<p>In context: "I black heart suit you?"</p></td>
+<td><p>By itself: yes ("hearts suit")</p>
+<p>In context: "I hearts suit you"</p></td>
+<td><p>By itself: "red hearts cards suit"</p>
+<p>In context: "I red hearts cards suit you"</p></td>
+</tr>
+<tr>
+<th scope="row">playing cards: diamonds, written as &amp;diams;</th>
+<td style="text-align: center;">♦</td>
+<td>Someone once said a ♦ is a girl’s best friend.</td>
+<td><p>By itself: "black diamond suit"</p>
+<p>In context: "Someone once said a black diamond suit is a girl’s best friend"</p></td>
+<td><p>By itself: "black diamond"</p>
+<p>In context: "Someone once said a black diamond is a girl’s best friend"</p></td>
+<td><p>By itself: "red diamonds cards suit"</p>
+<p>In context: "Someone once said a red diamonds cards suit is a girl’s best friend"</p></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table id="currency" class="data">
+<caption>Currency</caption>
+<tbody>
+<tr>
+<th scope="col">Symbol</th>
+<th scope="col">The character by itself</th>
+<th scope="col">In Context</th>
+<th scope="col">JAWS</th>
+<th scope="col">NVDA</th>
+<th scope="col">VoiceOver</th>
+</tr>
+<tr>
+<th scope="row">dollar symbol</th>
+<td style="text-align: center;">$</td>
+<td>$21</td>
+<td><p>By itself: “dollar”</p>
+<p>In context: "dollar twenty one"</p></td>
+<td><p>By itself: "dollar"</p>
+<p>In context: "twenty one dollars"</p></td>
+<td><p>By itself: "Dollar"</p>
+<p>In context: "twentyone dollars"</p></td>
+</tr>
+<tr>
+<th scope="row">Euro symbol, written as &amp;#8364;</th>
+<td style="text-align: center;">€</td>
+<td>€21</td>
+<td><p>By itself: "euro sign"</p>
+<p>In context: "euro sign twenty one"</p></td>
+<td><p>By itself: "euro"</p>
+<p>In context: "twenty one euros"</p></td>
+<td><p>By itself: "Euro two one"</p>
+<p>In context: "twentyone euros"</p></td>
+</tr>
+<tr>
+<th scope="row">Yen symbol, written as &amp;yen;</th>
+<td style="text-align: center;">¥</td>
+<td>¥500</td>
+<td><p>By itself: "yen"</p>
+<p>In context: "Yen five hundred"</p></td>
+<td><p>By itself: "Yen"</p>
+<p>In context: "five hundred Yen"</p></td>
+<td><p>By itself: "Yen"</p>
+<p>In context: "500 yen"</p></td>
+</tr>
+<tr>
+<th scope="row">Pound symbol, written as &amp;pound;</th>
+<td style="text-align: center;">£</td>
+<td>£10</td>
+<td><p>By itself: "pounds"</p>
+<p>In context: "ten pounds"</p></td>
+<td><p>By itself: "Pound"</p>
+<p>In context: "ten pounds"</p></td>
+<td><p>By itself: "Pound"</p>
+<p>In context: "10 pounds"</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<table id="math" class="data">
+    <caption>Mathematical Symbols</caption>
+    <tbody>
+        <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">The character by itself</th>
+            <th scope="col">In Context</th>
+            <th scope="col">JAWS</th>
+            <th scope="col">NVDA</th>
+            <th scope="col">VoiceOver</th>
+        </tr>
+        <tr>
+            <th scope="row">plus</th>
+            <td style="text-align: center;">+</td>
+            <td>5+2</td>
+            <td>
+                <p>By itself: "plus"</p>
+                <p>In context: "5 plus 2"</p>
+            </td>
+            <td>
+                <p>y itself: "plus"</p>
+                <p>In context: "five plus two"</p>
+            </td>
+            <td>
+                <p>By itself: "plus"</p>
+                <p>In context: "five plus two"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">minus, written as &amp;minus;</th>
+            <td style="text-align: center;">−</td>
+            <td>5−2</td>
+            <td>
+                <p>By itself: "minus"</p>
+                <p>In context: "5 minus 2"</p>
+            </td>
+            <td>
+                <p>By itself: "minus"</p>
+                <p>In context: "five minus two"</p>
+            </td>
+            <td>
+                <p>By itself: "minus"</p>
+                <p>In context: "five minus two"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">plus or minus, written as &amp;plusmn;</th>
+            <td style="text-align: center;">±</td>
+            <td>5±2</td>
+            <td>
+                <p>By itself: "plus or minus"</p>
+                <p>In context: "5 plus or minus 2"</p>
+            </td>
+                <td>
+                    <p>By itself: "plus or minus two"</p>
+                    <p>In context: "five plus or minus two"</p>
+                </td>
+                <td>
+                    <p>By itself: "plus or minus"</p>
+                    <p>In context: "five plus or minus two"</p>
+                </td>
+        </tr>
+        <tr>
+            <th scope="row">divided by, written as &amp;divide;</th>
+            <td style="text-align: center;">÷</td>
+            <td>5÷2</td>
+            <td>
+                <p>By itself: "divided by"</p>
+                <p>In context: "5 divided by 2"</p>
+            </td>
+            <td>
+                <p>By itself: "divide by"</p>
+                <p>In context: "five divide by two"</p>
+            </td>
+            <td>
+                <p>By itself: "divided by"</p>
+                <p>In context: "five divided by two"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">multiplied by, written as &amp;times;</th>
+            <td style="text-align: center;">×</td>
+            <td>5×2</td>
+            <td>
+                <p>By itself: "times"</p>
+                <p>In context: "5 times 2"</p>
+            </td>
+            <td>
+                <p>By itself: "times"</p>
+                <p>In context: "five times two"</p>
+            </td>
+            <td>
+                <p>By itself: "times"</p>
+                <p>In context: "five times two"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">equal sign</th>
+            <td style="text-align: center;">=</td>
+            <td>5=3+2</td>
+            <td>
+                <p>By itself: "equals"</p>
+                <p>In context: "5 equals 3 plus 2"</p>
+            </td>
+            <td>
+                <p>By itself: "equals"</p>
+                <p>In context: "five equals three plus two"</p>
+            </td>
+            <td>
+                <p>By itself: "equals"</p>
+                <p>In context: "Five equals three plus two"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">not equal, written as &amp;ne;</th>
+            <td style="text-align: center;">≠</td>
+            <td>5≠2</td>
+            <td>
+                <p>By itself: "not equal"</p>
+                <p>In context: "5 not equal to 2"</p>
+            </td>
+            <td>
+                <p>By itself: "not equal to"</p>
+                <p>In context: "five not equal to two"</p>
+            </td>
+            <td>
+                <p>By itself: "not equals"</p>
+                <p>In context: "five not equals two"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">approximately equal, written as &amp;asymp;</th>
+            <td style="text-align: center;">≈</td>
+            <td style="text-align: center;">
+                <p>5≈4.999</p>
+                <p>5 ≈ 4.999</p>
+            </td>
+            <td>
+                <p>By itself: "almost equal to"</p>
+                <p>In context: "5 almost equals to 4.999"</p>
+            </td>
+            <td>
+                <p>By itself: "almost equal to"</p>
+                <p>In context: "five almost equal to four point nine nine nine"</p>
+            </td>
+            <td>
+                <p>By itself: "Almost equal to"</p>
+                <p>In context: "five almost equal to four point nine nine nine"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">percent</th>
+            <td style="text-align: center;">%</td>
+            <td>5%</td>
+            <td>
+                <p>By itself: "percent"</p>
+                <p>In context: "5 percent"</p>
+            </td>
+            <td>
+                <p>By itself: "percent"</p>
+                <p>In context: "5 percent"</p>
+            </td>
+            <td>
+                <p>By itself: "percent"</p>
+                <p>In context: "five percent"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">percent with 2-digit denominator, written as &amp;permil;</th>
+            <td style="text-align: center;">‰</td>
+            <td>5‰</td>
+            <td>
+                <p>By itself: "per mil"</p>
+                <p>In context: "five per mil"</p>
+            </td>
+            <td>
+                <p>By itself: "per mil"</p>
+                <p>In context: "five per mil"</p>
+            </td>
+            <td>
+                <p>By itself: "per mil sign"</p>
+                <p>In context: "five per mil sign"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">fraction: half, written as &amp;frac12;</th>
+            <td style="text-align: center;">½</td>
+            <td>½ cup</td>
+            <td>
+                <p>By itself: "one half"</p>
+                <p>In context: "one half cup"</p>
+            </td>
+            <td>
+                <p>By itself: "one half"</p>
+                <p>In context: "one half cup"</p>
+            </td>
+            <td>
+                <p>By itself: "one half"</p>
+                <p>In context: "one half cup"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">fraction: one quarter, written as &amp;frac14;</th>
+            <td style="text-align: center;">¼</td>
+            <td>¼ liter</td>
+            <td>
+                <p>By itself: "one fourth"</p>
+                <p>In context: "one fourth liter"</p>
+            </td>
+            <td>
+                <p>By itself: "one quarter"</p>
+                <p>In context: "one quarter liter"</p>
+            </td>
+            <td>
+                <p>By itself: "one fourth"</p>
+                <p>In context: "one fourth liter"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">fraction: three quarters, written as &amp;frac34;</th>  
+            <td style="text-align: center;">¾</td>
+            <td>¾ kilometer</td>
+            <td>
+                <p>By itself: "three fourths"</p>
+                <p>In context: "three fourths kilometer"</p>
+            </td>
+            <td>
+                <p>By itself: "three quarters"</p>
+                <p>In context: "three quarters kilometer"</p>
+            </td>
+            <td>
+                <p>By itself: "three fourth"</p>
+                <p>In context: "three fourth kilometer"</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">less than, written as &amp;lt;</th>
+            <td style="text-align: center;">&lt;</td>
+            <td>5&lt;6</td>
+            <td>
+                <p>By itself: "less than"</p>
+                <p>In context: "5 less than 6"</p>
+            </td>
+        <td><p>By itself: "less"</p>
+<p>In context: "five less six"</p></td>
+<td><p>By itself: "less"</p>
+<p>In context: "five less than six"</p></td>
+</tr>
+<tr>
+<th scope="row">greater than, written as &amp;gt;</th>
+<td style="text-align: center;">&gt;</td>
+<td>5&gt;4</td>
+<td><p>By itself: "greater"</p>
+<p>In context: "5 greater 4"</p></td>
+<td><p>By itself: "greater"</p>
+<p>In context: "five greater four"</p></td>
+<td><p>By itself: "greater"</p>
+<p>In context: "five greater than four"</p></td>
+</tr>
+<tr>
+<th scope="row">less than or equal, written as &amp;le;</th>
+<td style="text-align: center;">≤</td>
+<td>5≤x</td>
+<td><p>By itself: "less than or equal to"</p>
+<p>In context: "5 less then or equal to x"</p>
+</td>
+<td><p>By itself: "less or equal to"</p>
+<p>In context: "five less or equal to x"</p>
+</td>
+<td><p>By itself: "less than or equal to"</p>
+<p>In context: "five less than or equal to x"</p></td>
+</tr>
+<tr>
+<th scope="row">greater than or equal, written as &amp;ge;</th>
+<td style="text-align: center;">≥</td>
+<td>5≥y</td>
+<td><p>By itself: "greater than or equal to"</p>
+<p>In context: "5 greater than or equal to y"</p></td>
+<td><p>By itself: "greater than or equal to"</p>
+<p>In context: "five greater than or equal to y"</p></td>
+<td><p>By itself: "greater than or equal to"</p>
+<p>In context: "five greater than or equal to y"</p></td>
+</tr>
+<tr>
+<th scope="row">prime, written as &amp;prime;</th>
+<td style="text-align: center;">′</td>
+<td>1′</td>
+<td><p>By itself: "prime"</p>
+<p>In context: "one prime"</p></td>
+<td><p>By itself: "prime"</p>
+<p>In context: "one prime"</p>
+</td>
+<td><p>By itself: "prime"</p>
+<p>In context: "one prime"</p></td>
+</tr>
+<tr>
+<th scope="row">double prime, written as &amp;Prime;</th>
+<td style="text-align: center;">″</td>
+<td>1″</td>
+<td><p>By itself: "double prime"</p>
+<p>In context: "one double prime"</p></td>
+<td><p>By itself: "double prime"</p>
+<p>In context: "one double prime"</p></td>
+<td><p>By itself: "double prime"</p>
+<p>In context: "one double prime"</p></td>
+</tr>
+<tr>
+<th scope="row">degree, written as &amp;deg;</th>
+<td style="text-align: center;">°</td>
+<td>90°</td>
+<td><p>By itself: "degrees"</p>
+<p>In context: "ninety degrees"</p></td>
+<td><p>By itself: "degrees"</p>
+<p>In context: "ninety degrees"</p></td>
+<td><p>By itself: "degrees"</p>
+<p>In context: "ninety degrees"</p></td>
+</tr>
+<tr>
+<th scope="row">sum, written as &amp;sum;</th>
+<td style="text-align: center;">∑</td>
+<td>∑i=x+y</td>
+<td><p>By itself: "summation" (prefaced with something that is hard to understand)</p>
+<p>In context: "summation i equals x plus y"</p></td>
+<td><p>By itself: "(prefaced with something that is hard to understand) summation" (prefaced with something that is hard to understand)</p>
+<p>In context: "(prefaced with something that is hard to understand) summation i equals x plus y"</p>
+</td>
+<td><p>By itself: "summation" (prefaced with something that is hard to understand)</p>
+<p>In context: "(prefaced with something that is hard to understand) summation i equals x plus y"</p></td>
+</tr>
+<tr>
+<th scope="row">microns, written as &amp;micro;</th>
+<td style="text-align: center;">µ</td>
+<td>5µ</td>
+<td><p>By itself: "mu" (sounds like "myoo")</p>
+<p>In context: "5 mu"</p></td>
+<td><p>By itself: "micro"</p>
+<p>In context: "five mu"</p></td>
+<td><p>By itself: "Greek small letter mu" (sounds like "myoo")</p>
+<p>In context: VoiceOver does NOT read the character. It simply says “five”</p></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
