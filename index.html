@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Special Characters test page</title>
-    <style type="text/css">
-        table {
-  border-collapse: collapse;
-  margin-bottom: 2.0em;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: 1.0em;
-}
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Special Characters Test Page</title>
+  <link rel="stylesheet" type="text/css" href="default.css" title="Default style sheet" />
 </head>
 <body>
-
+<h1>Testing Special Characters</h1>
 <table id="grammatical" class="data">
 <caption>Grammatical Punctuation Marks</caption>
-<tbody>
+<thead>
 <tr>
 <th scope="col">Symbol</th>
 <th scope="col">The character by itself</th>
@@ -30,6 +20,8 @@ th, td {
 <th scope="col">NVDA</th>
 <th scope="col">VoiceOver</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <th scope="row">tilde</th>
 <td style="text-align: center;">~</td>
@@ -525,7 +517,7 @@ th, td {
 <td>I feel “fine,” she said, sarcastically.</td>
 <td><p>By itself: “right quote”</p>
 <p>In context: “I feel left quote fine right quote she said sarcastically”</p></td>
-<td>By itself: no</p>
+<td><p>By itself: no</p>
 <p>In context: “I feel fine, she said, sarcastically”</p></td>
 <td><p>By itself: “right double quotation mark”</p>
 <p>In context: VoiceOver pauses briefly but does NOT read the character.</p></td>
@@ -560,7 +552,7 @@ th, td {
 <p>In context: "Home double angle bracket products"</p></td>
 <td>By itself: "double right pointing angle bracket"
 <p>In context: "Home double right pointing angle bracket products"</p></td>
-<td>By itself: "right pointing double arrow"</p>
+<td><p>By itself: "right pointing double arrow"</p>
 <p>In context: VoiceOver does not pronounce the angle bracket.</p></td>
 </tr>
 <tr>
@@ -655,7 +647,7 @@ th, td {
 <p>In context: "This is a apostrophe quotation apostrophe of sorts"</p></td>
 <td><p>By itself: no</p>
 <p>In context: "This is a quotation of sorts" (NVDA does not read out the character)</p></td>
-<td>By itself: "left single quotation mark"</p>
+<td><p>By itself: "left single quotation mark"</p>
 <p>In context: "This is a quotation of sorts"</p>
 <p>(VoiceOver pauses briefly, but does NOT read out the character)</p></td>
 </tr>
@@ -678,7 +670,7 @@ th, td {
 <p>In context: "You should left brace brace right brace yourself"</p></td>
 <td><p>By itself: no</p>
 <p>In context: "You should brace yourself" (NVDA does not read out the character)</p></td>
-<td>By itself: "right curly bracket"</p>
+<td><p>By itself: "right curly bracket"</p>
 <p>In context: "You should left curly bracket brace right curly bracket yourself"</p></td>
 </tr>
 <tr>
@@ -708,7 +700,7 @@ th, td {
 
 <table id="typo" class="data">
 <caption>Typographical Symbols</caption>
-<tbody>
+<thead>
 <tr>
 <th scope="col">Symbol</th>
 <th scope="col">The character by itself</th>
@@ -717,6 +709,8 @@ th, td {
 <th scope="col">NVDA</th>
 <th scope="col">VoiceOver</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <th scope="row">copyright, written as &amp;copy;</th>
 <td style="text-align: center;">©</td>
@@ -767,10 +761,10 @@ th, td {
 <td>Have you seen ¶3 on page 3?</td>
 <td><p>By itself: "paragraph"</p>
 <p>In context: "Have you seen paragraph three on page three?"</p></td>
-<td>By itself: no
+<td><p>By itself: no</p>
 <p>In context: no, "Have you seen three on page three?"</p></td>
-<td><p>By itself: I think VoiceOver says "pillcraw" but it is really hard to understand.</p>
-In context: "Have you seen pillcraw three on page three?"</p></td>
+<td><p>By itself: I think VoiceOver says &ldquo;pilcrow&rdquo; but it is really hard to understand.</p>
+<p>In context: "Have you seen pilcrow three on page three?"</p></td>
 </tr>
 <tr>
 <th scope="row">small bullet, written as &amp;middot;</th>
@@ -980,7 +974,7 @@ In context: "Have you seen pillcraw three on page three?"</p></td>
 <p>&nbsp;</p>
 <table id="currency" class="data">
 <caption>Currency</caption>
-<tbody>
+<thead>
 <tr>
 <th scope="col">Symbol</th>
 <th scope="col">The character by itself</th>
@@ -989,6 +983,8 @@ In context: "Have you seen pillcraw three on page three?"</p></td>
 <th scope="col">NVDA</th>
 <th scope="col">VoiceOver</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <th scope="row">dollar symbol</th>
 <td style="text-align: center;">$</td>
@@ -1039,7 +1035,7 @@ In context: "Have you seen pillcraw three on page three?"</p></td>
 
 <table id="math" class="data">
     <caption>Mathematical Symbols</caption>
-    <tbody>
+    <thead>
         <tr>
             <th scope="col">Symbol</th>
             <th scope="col">The character by itself</th>
@@ -1048,6 +1044,8 @@ In context: "Have you seen pillcraw three on page three?"</p></td>
             <th scope="col">NVDA</th>
             <th scope="col">VoiceOver</th>
         </tr>
+      </thead>
+    <tbody>
         <tr>
             <th scope="row">plus</th>
             <td style="text-align: center;">+</td>
