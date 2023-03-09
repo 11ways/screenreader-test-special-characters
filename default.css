@@ -4,6 +4,16 @@ table {
 }
 
 th, td {
-  border: 1px solid #666;
+  border: 1px solid var(--border-colour);
   padding: .5rem;
 }
+
+footer {
+  margin-top: 60px;
+  border-top: 2px solid var(--border-colour)
+}
+
+:root {
+  --border-colour: #666;
+}
+
