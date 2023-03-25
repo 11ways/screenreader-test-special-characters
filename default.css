@@ -8,6 +8,14 @@ th, td {
   padding: .5rem;
 }
 
+th {
+  text-align: left;
+}
+
+tr td:first-child {
+  text-align: center;
+}
+
 footer {
   margin-top: 60px;
   border-top: 2px solid var(--border-colour)
