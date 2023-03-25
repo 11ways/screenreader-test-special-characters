@@ -4,6 +4,8 @@ This repository is for our [Testing Special Characters project](https://11ways.g
 where we reran Deque's test from 2014:
 [Why Don’t Screen Readers Always Read What’s on the Screen? Part 1: Punctuation and Typographic Symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/).
 
+See the article with the test results: [How screen readers read special characters: an update](https://elevenways.be/en/articles/screenreaders-special-characters) (17 March 2023).
+
 Feel free to use this repository for your own tests.
 
 ## Licence
